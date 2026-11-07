@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- if page.url == "/" -%}
+    {%- assign page_title = "Amna Jamal | Mechanistic Interpretability and AI Safety" -%}
+    {%- elsif page.title -%}
+    {%- assign page_title = page.title | append: " | Amna Jamal" -%}
+    {%- else -%}
+    {%- assign page_title = site.title -%}
+    {%- endif -%}
+    {%- assign page_description = page.description | default: site.description | strip_newlines -%}
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:image" content="{{ '/images/Portfolio-Amna.jpeg' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title | escape }}">
+    <meta name="twitter:description" content="{{ page_description | escape }}">
+    {%- if page.url == "/" %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Amna Jamal",
+            "url": "https://amnajamalkhattak.github.io/",
+            "email": "mailto:amnajkhattak@gmail.com",
+            "jobTitle": "AI Researcher",
+            "image": "https://amnajamalkhattak.github.io/images/Portfolio-Amna.jpeg",
+            "knowsAbout": ["Mechanistic interpretability", "Automated interpretability", "AI safety"],
+            "sameAs": [
+                "https://openreview.net/profile?id=~Amna_Jamal1",
+                "https://github.com/AmnaJamalKhattak",
+                "https://www.linkedin.com/in/amnajamalkhattak/"
+            ]
+        }
+    </script>
+    {%- endif %}
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="nav-name" href="{{ '/' | relative_url }}">Amna Jamal</a>
+            <div class="nav-links">
+                <a href="{{ '/#papers' | relative_url }}">Papers</a>
+                <a href="{{ '/#experience' | relative_url }}">Experience</a>
+                <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} class="active"{% endif %}>Blog</a>
+                <a href="{{ '/cv/Amna_Jamal_CV.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ site.time | date: "%Y" }} Amna Jamal · <a href="mailto:amnajkhattak@gmail.com">amnajkhattak@gmail.com</a></p>
+            <p class="credit">Layout inspired by <a href="https://jonbarron.info" target="_blank" rel="noopener">Jon Barron</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

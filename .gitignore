@@ -13,3 +13,8 @@ desktop.ini
 # Temporary files
 *.tmp
 *.log
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata

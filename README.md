@@ -1,106 +1,51 @@
-# Academic Portfolio Website
+# amnajamalkhattak.github.io
 
-A clean, modern academic portfolio website designed for showcasing research work, publications, and experience. Perfect for applying to research internships and PhD positions.
+Personal academic website of Amna Jamal. Live at <https://amnajamalkhattak.github.io>.
 
-## Features
+It is a small [Jekyll](https://jekyllrb.com) site. GitHub Pages builds it automatically on every push, so there is nothing to install to publish changes.
 
-- **Clean, Professional Design**: Modern and minimalist layout suitable for academic purposes
-- **Responsive Layout**: Works seamlessly on desktop, tablet, and mobile devices
-- **Smooth Navigation**: Sticky navigation bar with smooth scrolling
-- **Publication Showcase**: Dedicated section for highlighting your research publications
-- **Experience Timeline**: Clear presentation of your academic and professional experience
-- **Contact Information**: Easy-to-find contact details and social media links
-
-## Sections
-
-1. **About**: Introduction and research interests
-2. **Contact**: Email, office location, and institution details
-3. **Education**: Academic background and degrees
-4. **Recent News**: Updates about your work, publications, and achievements
-5. **Experience**: Research positions, internships, and work history
-6. **Publications**: Selected publications with links to papers, project pages, and code
-
-## Customization
-
-### Personal Information
-
-1. **Name and Title**: Update in `index.html`:
-   - Line 6: Change `<title>Your Name - Portfolio</title>`
-   - Line 30: Update `<h1 class="name">Your Name</h1>`
-   - Line 31: Update `<p class="subtitle">Your Institution, Location</p>`
-
-2. **Social Links**: Update the social media links in the hero section (lines 32-37):
-   - Replace `#` with your actual URLs
-   - Add or remove links as needed
-
-3. **About Section**: Customize your bio and research interests (lines 48-58)
-
-4. **Contact Information**: Update your contact details (lines 65-70)
-
-5. **Education**: Add your educational background (lines 75-90)
-
-6. **News**: Add your recent achievements and updates (lines 95-110)
-
-7. **Experience**: List your research positions and internships (lines 115-135)
-
-8. **Publications**: Add your publications with proper formatting (lines 140-200)
-
-### Styling
-
-- **Colors**: Modify CSS variables in `styles.css` (lines 6-15) to change the color scheme
-- **Fonts**: The website uses system fonts, but you can add custom fonts in `styles.css`
-
-## Getting Started
-
-1. **Clone or Download**: Get all the files in this repository
-
-2. **Edit Content**: 
-   - Open `index.html` in a text editor
-   - Replace all placeholder text with your information
-   - Update all links (social media, publications, etc.)
-
-3. **Add Images** (Optional):
-   - Replace publication thumbnail placeholders with actual images
-   - Update the `<div class="thumbnail-placeholder">` sections with `<img>` tags
-
-4. **Test Locally**:
-   - Open `index.html` in a web browser
-   - Test all links and navigation
-   - Check responsiveness on different screen sizes
-
-5. **Deploy**:
-   - Upload all files to a web hosting service (GitHub Pages, Netlify, etc.)
-   - Or use GitHub Pages by pushing to a repository and enabling Pages in settings
-
-## File Structure
+## Files
 
 ```
-portfolio/
-├── index.html      # Main HTML file
-├── styles.css      # Stylesheet
-├── script.js       # JavaScript for interactivity
-└── README.md       # This file
+index.html            Homepage: intro, news, papers, current research, experience, etc.
+blog/index.html       Blog page (lists every post automatically)
+_posts/               Published blog posts (create this folder for the first post)
+_drafts/              Templates for new posts (never published)
+_layouts/default.html Shared page frame: <head>, navigation bar, footer
+_layouts/post.html    Layout for a single blog post
+styles.css            All styling (colors are variables at the top, with a dark theme)
+cv/Amna_Jamal_CV.pdf  CV linked from the site
+images/               Photo and figures
+_config.yml           Site title, description and URL
 ```
 
-## Browser Support
+## Common updates
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+**Update the CV.** Replace `cv/Amna_Jamal_CV.pdf` with the new PDF, keeping the same file name. Every CV link keeps working.
 
-## Tips for Research Applications
+**Add a news item.** In `index.html`, add a line at the top of the News list:
 
-1. **Keep it Updated**: Regularly update your news section with recent achievements
-2. **Highlight Publications**: Make sure your best work is prominently featured
-3. **Clear Contact Info**: Ensure potential advisors can easily reach you
-4. **Professional Tone**: Maintain an academic and professional writing style
-5. **Links to Work**: Always include links to papers, code, and project pages when available
+```html
+<li><span class="date">12/26</span> <span>What happened.</span></li>
+```
 
-## License
+Keep about six items visible and move older ones into the "Older news" list below it.
 
-Feel free to use this template for your personal portfolio. Customize it to match your needs and style.
+**Add a paper.** Copy one `<li>` block in the Research Papers section of `index.html` and change the title, authors (wrap your name in `<strong>`), venue and links. Add more buttons inside `paper-links` as needed, for example `<a href="...">Code</a>` or `<a href="...">arXiv</a>`.
+
+**Write a blog post on this site.** Copy `_drafts/example-post.md` into `_posts/`, rename it `YYYY-MM-DD-short-title.md`, edit the front matter and write the post in Markdown.
+
+**List a post published elsewhere** (LessWrong, Alignment Forum, Medium, Substack). Copy `_drafts/example-external-post.md` into `_posts/`, rename it with the publication date, and set `external_url` and `external_site`. The Blog page links straight to it.
+
+## Preview locally (optional)
+
+```bash
+gem install jekyll
+jekyll serve
+```
+
+Then open <http://localhost:4000>. Add `--drafts` to also see the draft templates.
 
 ## Credits
 
-Design inspired by academic portfolio websites in the research community.
+Layout inspired by [Jon Barron's website](https://jonbarron.info).

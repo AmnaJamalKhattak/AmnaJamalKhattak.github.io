@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="post">
+    <p class="post-back"><a href="{{ '/blog/' | relative_url }}">&larr; All posts</a></p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <div class="post-body">
+        {{ content }}
+    </div>
+</article>

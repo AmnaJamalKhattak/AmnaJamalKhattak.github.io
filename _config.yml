@@ -1,0 +1,19 @@
+title: Amna Jamal
+description: >-
+  Amna Jamal is an AI researcher working on mechanistic interpretability for AI safety,
+  with a focus on diffusion transformers and language models.
+url: https://amnajamalkhattak.github.io
+baseurl: ""
+author: Amna Jamal
+email: amnajkhattak@gmail.com
+
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
+
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - images/README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
