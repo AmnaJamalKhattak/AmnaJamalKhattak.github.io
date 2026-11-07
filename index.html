@@ -1,415 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amna Jamal | Mechanistic Interpretability and AI Safety</title>
-    <meta name="description">
-    <link rel="canonical" href="https://amnajamalkhattak.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://amnajamalkhattak.github.io/">
-    <meta property="og:title" content="Amna Jamal | Mechanistic Interpretability and AI Safety">
-    <meta property="og:description">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Amna Jamal | Mechanistic Interpretability and AI Safety">
-    <meta name="twitter:description">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Amna Jamal",
-            "url": "https://amnajamalkhattak.github.io/",
-            "email": "mailto:amnajkhattak@gmail.com",
-            "jobTitle": "Technical AI Safety Researcher",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Islamabad",
-                "addressCountry": "Pakistan"
-            },
-            "sameAs": [
-                "https://www.linkedin.com/in/amnajamalkhattak/",
-                "https://github.com/AmnaJamalKhattak"
-            ]
-        }
-    </script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Unify all Contact section text, icons, and links to a single color */
-        #contact .contact-info,
-        #contact .contact-info p,
-        #contact .contact-info a,
-        #contact .contact-info i {
-            color: inherit;
-        }
-        #contact .contact-info a {
-            text-decoration: none;
-        }
-        #contact .contact-info a:hover {
-            text-decoration: underline;
-        }
+---
+layout: default
+---
+<header id="about" class="intro">
+    <div class="intro-text">
+        <h1 class="name">Amna Jamal</h1>
+        <p class="role">AI Researcher</p>
+        <p>
+            I'm an AI researcher working on mechanistic interpretability for AI safety. I study how neural networks
+            represent information internally and how causal interventions on those representations can explain and
+            control their behavior, mostly in diffusion transformers and language models. Going forward, I'm interested
+            in <strong>automated interpretability</strong>: building tools and agents that can carry out this kind of
+            analysis at the scale of frontier models.
+        </p>
+        <p class="highlight">I am applying to PhD programs for Fall 2027.</p>
+        <p class="links">
+            <a href="mailto:amnajkhattak@gmail.com">Email</a> /
+            <a href="cv/Amna_Jamal_CV.pdf" target="_blank" rel="noopener">CV</a> /
+            <a href="https://openreview.net/profile?id=~Amna_Jamal1" target="_blank" rel="noopener">OpenReview</a> /
+            <a href="https://github.com/AmnaJamalKhattak" target="_blank" rel="noopener">GitHub</a> /
+            <a href="https://www.linkedin.com/in/amnajamalkhattak/" target="_blank" rel="noopener">LinkedIn</a> /
+            <a href="blog/">Blog</a>
+        </p>
+    </div>
+    <img src="images/Portfolio-Amna.jpeg" alt="Photo of Amna Jamal" class="photo" width="200" height="200">
+</header>
 
-        /* Widen only the hero so the intro text spans more width and runs shorter.
-           Adjust 1140px up or down to taste; the rest of the site stays at 900px. */
-        @media (min-width: 769px) {
-            .hero .container {
-                max-width: 1140px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="#about-content">About</a>
-                <a href="#publications">Research</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#news">News</a>
-            </div>
-        </div>
-    </nav>
+<section id="news" class="section">
+    <h2>News</h2>
+    <ul class="news">
+        <!-- Confirm month: date of the NeurIPS 2026 workshop acceptances -->
+        <li><span class="date">10/26</span> <span>Three papers accepted at NeurIPS 2026 workshops: <em>One Carrier Isn't Enough</em> (AI4Good, first author), <em>Evaluating LLM-Generated World Models</em> (NEmo), and <em>DUC-Bench</em> (AI4Good and AISciK).</span></li>
+        <!-- Confirm month: reviewing period -->
+        <li><span class="date">09/26</span> <span>Reviewed for the NeurIPS 2026 AI4GOOD and WM-PAI workshops.</span></li>
+        <li><span class="date">06/26</span> <span>Joined the PRISM AI Safety Fellowship as a Research Fellow (Safe-by-Design AI), working with Jobst Heitzig.</span></li>
+        <li><span class="date">05/26</span> <span>Started a technical AI safety research project with BlueDot Impact on the robustness of linear refusal probes.</span></li>
+        <li><span class="date">02/26</span> <span>Graduated with a BS in Computer Science from COMSATS University Islamabad.</span></li>
+        <li><span class="date">11/25</span> <span>First-author paper <em>Diffusion Transformers Use Sink Registers</em> accepted at the AAAI 2026 XAI4Science Workshop.</span></li>
+    </ul>
+    <details class="older">
+        <summary>Older news</summary>
+        <ul class="news">
+            <li><span class="date">05/26</span> <span>Completed BlueDot Impact's Frontier AI Governance program.</span></li>
+            <li><span class="date">03/26</span> <span>Completed BlueDot Impact's AGI Strategy program.</span></li>
+            <li><span class="date">02/26</span> <span>Completed BlueDot Impact's Technical AI Safety course.</span></li>
+            <li><span class="date">09/25</span> <span>Founded ResearchCircle, an undergraduate research community that has grown to 700+ members.</span></li>
+            <li><span class="date">07/25</span> <span>Started mechanistic interpretability research on Diffusion Transformers at Algoverse.</span></li>
+        </ul>
+    </details>
+</section>
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <div class="avatar-container">
-                        <img src="images/Portfolio-Amna.jpeg" alt="Amna Jamal" class="profile-avatar" id="profile-image">
-                        <div class="avatar-placeholder" id="avatar-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <h1 class="name">Amna Jamal</h1>
-                    <p class="subtitle">Technical AI Safety Researcher</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/amnajamalkhattak/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/AmnaJamalKhattak" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="mailto:amnajkhattak@gmail.com" title="Email"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="Amna Jamal  - Resume - May, 2026.pdf" target="_blank" rel="noopener noreferrer" title="CV"><i class="fas fa-file-alt"></i> CV</a>
-                    </div>
-                </div>
-                <div class="hero-right">
-                    <div id="about-content" class="about-content">
-                        <p>
-                            Hi, I am Amna Jamal, a computer science graduate and an early-career researcher in <strong>AI safety</strong> with a particular focus on <strong>mechanistic interpretability</strong>.
-                        </p>
+<section id="papers" class="section">
+    <h2>Research Papers</h2>
+    <ul class="papers">
+        <li>
+            <a class="paper-title" href="https://openreview.net/forum?id=Fc7s3UrQr1" target="_blank" rel="noopener">Diffusion Transformers Use Sink Registers</a>
+            <p class="authors"><strong>Amna Jamal</strong>, Mika Tan, Clarissa Aurelia Nahid Saputra, Quan Huynh, Kevin Zhu, Antonio Mari</p>
+            <p class="venue"><em>XAI4Science Workshop at AAAI 2026</em></p>
+            <p class="paper-links"><a href="https://openreview.net/forum?id=Fc7s3UrQr1" target="_blank" rel="noopener">Paper</a></p>
+        </li>
+        <li>
+            <a class="paper-title" href="https://openreview.net/forum?id=QJ8g4adkOT" target="_blank" rel="noopener">One Carrier Isn't Enough: Redundancy-Aware Concept Suppression in Diffusion Transformers</a>
+            <!-- Replace with the full author list, e.g. <strong>Amna Jamal</strong>, Name Two, Name Three -->
+            <p class="authors"><strong>Amna Jamal</strong> (first author) et al.</p>
+            <p class="venue"><em>AI4Good Workshop at NeurIPS 2026</em></p>
+            <p class="paper-links"><a href="https://openreview.net/forum?id=QJ8g4adkOT" target="_blank" rel="noopener">Paper</a></p>
+        </li>
+        <li>
+            <a class="paper-title" href="https://openreview.net/forum?id=KPuFM0WmRO" target="_blank" rel="noopener">Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning</a>
+            <!-- Replace with the full author list -->
+            <p class="authors"><strong>Amna Jamal</strong> (co-author) et al.</p>
+            <p class="venue"><em>NEmo Workshop at NeurIPS 2026</em></p>
+            <p class="paper-links"><a href="https://openreview.net/forum?id=KPuFM0WmRO" target="_blank" rel="noopener">Paper</a></p>
+        </li>
+        <li>
+            <a class="paper-title" href="https://openreview.net/forum?id=nK0IuetJIH" target="_blank" rel="noopener">DUC-Bench: A Guideline-Grounded Benchmark for Evaluating Evidence-Responsive Decision Updating in Medical Large Language Models</a>
+            <!-- Replace with the full author list -->
+            <p class="authors"><strong>Amna Jamal</strong> (co-author) et al.</p>
+            <p class="venue"><em>AI4Good and AISciK Workshops at NeurIPS 2026</em></p>
+            <p class="paper-links"><a href="https://openreview.net/forum?id=nK0IuetJIH" target="_blank" rel="noopener">Paper</a></p>
+        </li>
+        <li>
+            <a class="paper-title" href="https://openreview.net/forum?id=h3eKMNjkGv" target="_blank" rel="noopener">Position: Contradiction Resolution in LLMs Is a Type Error, Not a Knowledge Problem</a>
+            <!-- Replace with the full author list -->
+            <p class="authors"><strong>Amna Jamal</strong> (co-author) et al.</p>
+            <p class="venue"><em>Under review</em></p>
+            <p class="paper-links"><a href="https://openreview.net/forum?id=h3eKMNjkGv" target="_blank" rel="noopener">Paper</a></p>
+        </li>
+    </ul>
+</section>
 
-                        <p>
-                            My research is mostly about understanding what is actually happening inside modern AI systems: how they represent and process information internally, what shapes their behaviour, and how causal methods can reveal the mechanisms underlying their decisions. I am drawn to this because as AI systems grow more capable and more widely deployed, being able to look inside them and verify what they are doing, rather than just treating them as black boxes, feels like one of the most important problems to work on. We can never make something safe that we do not understand.
-                        </p>
+<section id="current" class="section">
+    <h2>Current Research</h2>
+    <ul class="plain">
+        <li><strong>Sparse Structures and Causal Control in Diffusion Transformers</strong> — Investigating sparse internal structures in DiTs and whether targeted interventions can enable interpretable, selective control over model behavior, particularly for AI safety.</li>
+        <li><strong>Robustness of Linear Probes for Safety-Relevant Concepts</strong> — Examining whether linear probes for refusal and evaluation awareness capture generalizable representations or rely on spurious features and distribution-specific correlations.</li>
+        <li><strong>LLM-Generated World Models for Safe-by-Design AI</strong> — Investigating whether LLM-generated executable world models preserve decision-relevant structure and support reliable planning in partially observable multi-agent environments.</li>
+        <li><strong>Multi-Agent Research Forums</strong> — Building and evaluating an AI-agent research forum where agents autonomously discuss scientific papers, critique methodologies, and propose research directions, investigating whether collective discussion produces more useful and substantiated insights than independent analysis.</li>
+        <li><strong>Reasoning Faithfulness in Vision-Language-Action Models</strong> — Evaluating whether VLA models' stated reasoning faithfully reflects their driving decisions, using counterfactual testing and reasoning–action consistency analysis.</li>
+    </ul>
+</section>
 
-                        <p>
-                            I am currently working on multiple research projects, and building toward PhD applications in mechanistic interpretability and technical AI safety. Alongside my own research, I help grow AI safety research capacity in Pakistan through a community that I have built called ResearchCircle. Longer term, I want to do interpretability research that makes advanced AI systems more transparent and safer to deploy.
-                        </p>
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    <ul class="entries">
+        <li>
+            <div class="entry-head"><span><strong>AI Researcher</strong>, Algoverse</span><span class="when">Jul 2025 – Present</span></div>
+            <p>Lead mechanistic interpretability research on Diffusion Transformers using causal ablations, activation interventions, probing, and attention and MLP analysis, which led to the first-author paper <em>Diffusion Transformers Use Sink Registers</em>. Also led a second direction on concept suppression in DiTs with steering vectors.</p>
+        </li>
+        <li>
+            <!-- Confirm end month -->
+            <div class="entry-head"><span><strong>Research Fellow, Safe-by-Design AI</strong>, PRISM AI Safety Fellowship</span><span class="when">Jun 2026 – Oct 2026</span></div>
+            <p>Worked with Jobst Heitzig on whether LLMs can construct executable formal world models for safe-by-design AI agents, developing and evaluating LLM-generated stochastic-game and partially observable stochastic-game representations.</p>
+        </li>
+        <li>
+            <div class="entry-head"><span><strong>Program Support</strong>, PRISM AI Safety Fellowship</span><span class="when">Jun 2026 – Oct 2026</span></div>
+            <p>Supported two research teams studying conflicting information in LLMs and AI preference drift during training, helping with technical and coordination blockers.</p>
+        </li>
+        <li>
+            <div class="entry-head"><span><strong>Technical AI Safety Researcher</strong>, BlueDot Impact</span><span class="when">May 2026 – Jun 2026</span></div>
+            <p>Investigated whether linear refusal probes capture genuine model representations or superficial prompt features.</p>
+        </li>
+        <li>
+            <div class="entry-head"><span><strong>AI Intern</strong>, Webrange Solutions</span><span class="when">Sep 2024 – Oct 2025</span></div>
+            <p>Built a generative-AI platform that lets fashion businesses automate ad creation, with content moderation and campaign management. <a href="https://github.com/AliShoaibHassan/AdVance" target="_blank" rel="noopener">Code</a></p>
+        </li>
+    </ul>
+</section>
 
-                        <p>
-                            I am open to research collaborations and PhD opportunities in these areas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<section id="education" class="section">
+    <h2>Education</h2>
+    <ul class="entries">
+        <li>
+            <div class="entry-head"><span><strong>BS Computer Science</strong>, COMSATS University Islamabad, Pakistan</span><span class="when">Feb 2022 – Feb 2026</span></div>
+        </li>
+    </ul>
+</section>
 
-    <main class="main-content">
+<section id="service" class="section">
+    <h2>Service &amp; Leadership</h2>
+    <ul class="entries">
+        <li>
+            <div class="entry-head"><span><strong>Reviewer</strong>, NeurIPS 2026 Workshops</span><span class="when">2026</span></div>
+            <p>Trustworthy AI for Good (AI4GOOD) and World Models in Physical AI (WM-PAI).</p>
+        </li>
+        <li>
+            <div class="entry-head"><span><strong>Founder and AI Safety Lead</strong>, ResearchCircle</span><span class="when">Sep 2025 – Present</span></div>
+            <p>Founded and lead a 700+ member undergraduate research community spanning computer science, AI, mathematics, and physics. Run the AI safety group's paper readings, technical discussions, and workshops to build AI safety research capacity in Pakistan.</p>
+        </li>
+    </ul>
+</section>
 
-        <div class="container">
-            <div class="section-row">
-                <section id="contact" class="section section-half">
-                    <h2>Contact</h2>
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:amnajkhattak@gmail.com">amnajkhattak@gmail.com</a></p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+923319115226">+92 331 911 5226</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
-                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/amnajamalkhattak/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                        <p><i class="fab fa-github"></i> <a href="https://github.com/AmnaJamalKhattak" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    </div>
-                </section>
+<section id="training" class="section">
+    <h2>Training &amp; Academic Activities</h2>
+    <ul class="compact">
+        <li><span><strong>IAIFI Summer School</strong>, NSF Institute for Artificial Intelligence and Fundamental Interactions</span><span class="when">2026</span></li>
+        <li><span><strong>Oxford Machine Learning School (OxML)</strong>, MLx Representation Learning &amp; Generative AI</span><span class="when">2026</span></li>
+        <li><span><strong>ML Summer School</strong>, Cohere Labs</span><span class="when">2026</span></li>
+        <li><span><strong>BlueDot Impact</strong>, Technical AI Safety, AGI Strategy, and Frontier AI Governance</span><span class="when">2026</span></li>
+        <li><span><strong>IBM Qiskit Global Summer School</strong>, Achieved Quantum Excellence</span><span class="when">2025</span></li>
+        <li><span><strong>Global Physics Summit</strong>, Participant</span><span class="when">2025</span></li>
+        <li><span><strong>5th Riazuddin Memorial School on Quantum Computing</strong></span><span class="when">2025</span></li>
+        <li><span><strong>Peer Tutor</strong>, Differential Equations and Linear Algebra</span><span class="when">2024</span></li>
+        <li><span><strong>Harvard Summer School</strong>, Particle Physics</span><span class="when">2019</span></li>
+    </ul>
+</section>
 
-                <section id="education" class="section section-half">
-                    <h2>Education</h2>
-                    <div class="education-list">
-                        <div class="education-item">
-                            <h3>BS Computer Science</h3>
-                            <p class="institution">COMSATS University Islamabad, Pakistan</p>
-                            <p class="gpa">02/22 - 02/26</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-content">
-                    <div class="skills-category">
-                        <h3>Interpretability and Research Methods</h3>
-                        <p>Causal ablation, activation and probing analysis, representation steering, attention and MLP analysis, experimental design</p>
-                    </div>
-                    <div class="skills-category">
-                        <h3>Machine Learning Frameworks</h3>
-                        <p>PyTorch, Hugging Face Transformers, Hugging Face Diffusers, scikit-learn</p>
-                    </div>
-                    <div class="skills-category">
-                        <h3>Languages and Tools</h3>
-                        <p>Python, Git/GitHub, Linux, LaTeX</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="news" class="section">
-            <div class="container">
-                <h2>Recent News</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <span class="news-date">06/26:</span>
-                        <span class="news-content">Joined the <strong>PRISM AI Safety Fellowship 2026</strong> as a <strong>Program Support Volunteer</strong> for the “AI Preference Drift During Training” and “LLMs and Conflicting Information” research teams.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">05/26:</span>
-                        <span class="news-content">Began the <strong>Technical AI Safety Research Project</strong> with <strong>BlueDot Impact</strong>, and completed BlueDot Impact’s <strong>Frontier AI Governance</strong> program.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">03/26:</span>
-                        <span class="news-content">Completed <strong>BlueDot Impact</strong>’s <strong>AGI Strategy</strong> program.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">02/26:</span>
-                        <span class="news-content">Graduated with a <strong>BS in Computer Science</strong> from <strong>COMSATS University Islamabad</strong>.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">02/26:</span>
-                        <span class="news-content">Completed <strong>BlueDot Impact</strong>’s <strong>Technical AI Safety</strong> course.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">11/25:</span>
-                        <span class="news-content">First-author paper “Diffusion Transformers Use Sink Registers” accepted at the <strong>AAAI 2026 XAI4Science Workshop</strong>.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">09/25:</span>
-                        <span class="news-content">Founded <strong>ResearchCircle</strong>, a multidisciplinary undergraduate research community that has grown to more than <strong>600</strong> students.</span>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">07/25:</span>
-                        <span class="news-content">Joined <strong>Algoverse</strong> as an AI Researcher working on mechanistic interpretability of Diffusion Transformers.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <h3>AI Researcher - Algoverse</h3>
-                        <p class="experience-description">
-                            Led a team conducting mechanistic interpretability research on high-norm activations in Diffusion Transformers, using causal ablation, probing, and attention and MLP analysis to study how they emerge and what role they play. First author of “Diffusion Transformers Use Sink Registers” (AAAI 2026 XAI4Science Workshop). Continuing related work on interpreting and intervening on Diffusion Transformer representations.
-                        </p>
-                        <p class="experience-date">07/25 - Present</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Program Support Volunteer - PRISM AI Safety Fellowship 2026</h3>
-                        <p class="experience-description">
-                            Support two technical AI safety research teams in both a technical and coordination capacity, contributing to research tasks and experiments and keeping the teams on track through progress tracking, blocker identification, and project coordination.<br><br>
-                            • <strong>AI Preference Drift During Training</strong> — Studies whether an AI model’s preferences over different tasks shift as it is trained on particular capabilities, and whether the model can anticipate changes in its own future preferences.<br>
-                            • <strong>LLMs and Conflicting Information</strong> — Studies how large language models revise decisions when new evidence conflicts with earlier information or recommendations, including update consistency, anchoring, and uncertainty calibration.
-                        </p>
-                        <p class="experience-date">06/26 - Present</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Founder - ResearchCircle</h3>
-                        <p class="experience-description">
-                            Founded ResearchCircle, an interdisciplinary undergraduate research community (now 900+ students across computer science, mathematics, and physics) running recurring discussion circles and workshops.
-                        </p>
-                        <p class="experience-date">09/25 - Present</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>AI Safety Research Lead - ResearchCircle</h3>
-                        <p class="experience-description">
-                            Lead the AI Safety Circle: read and distill technical AI safety research, spanning interpretability, evaluations, and representation monitoring, and run discussions that make it accessible to a mixed audience. The initiative aims to build technical AI safety awareness and research capacity in Pakistan which is currently lacking.
-                        </p>
-                        <p class="experience-date">03/26 - Present</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Technical AI Safety Research Project - BlueDot Impact</h3>
-                        <p class="experience-description">
-                            Conducting an independent technical AI safety research project as part of BlueDot Impact’s research track. The project is about testing how robust current probes are to confound-targeted decorrelation.
-                        </p>
-                        <p class="experience-date">05/26 - Present</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>AI Intern - Webrange Solutions</h3>
-                        <p class="experience-description">
-                            Contributed to multimodal generative-AI pipelines for producing images and videos from text and product-image inputs.
-                        </p>
-                        <p class="experience-date">09/24 - 10/25</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Software Engineering Intern - 10Pearls</h3>
-                        <p class="experience-description">
-                            Contributed to the development and testing of a Java-based full-stack contact-management application.
-                        </p>
-                        <p class="experience-date">06/25 - 08/25</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications" class="section">
-            <div class="container">
-                <h2>Research, Publications, and Projects</h2>
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <img src="images/4Steps-Plot3.png" alt="High-norm Activations in Diffusion Transformers" class="publication-image">
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">Diffusion Transformers Use Sink Registers</h3>
-                            <p class="publication-authors">
-                                <strong>Amna Jamal, Mika Tan, Clarissa Aurelia Nahid Saputra, Quan Huynh, Kevin Zhu, Antonio Mari</strong>
-                            </p>
-                            <p class="publication-venue"><strong>AAAI 2026 XAI4Science Workshop</strong> <span class="badge-accepted">Accepted</span></p>
-                            <p class="publication-description">
-                                • <strong>First Author</strong><br>
-                                Studied how high-norm activations emerge in Diffusion Transformers and what role they play, using causal ablation, activation analysis, probing, and attention and MLP analysis. We show that a small number of emergent high-norm tokens behave as sink registers, absorbing attention rather than encoding special semantic meaning.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://openreview.net/pdf?id=Fc7s3UrQr1" target="_blank" rel="noopener noreferrer">Paper</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <div class="thumbnail-placeholder">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">Concept Unlearning in Diffusion Transformers via Steering Vectors</h3>
-                            <p class="publication-venue">Under Review <span class="badge-accepted">Under Review</span></p>
-                            <p class="publication-description">
-                                Investigates whether activation-space steering can suppress selected visual concepts in Diffusion Transformers while preserving unrelated generation. Evaluates the effectiveness, specificity, and unintended effects of representation-level concept interventions.
-                            </p>
-                            <p class="publication-description">
-                                • <strong>Research themes</strong><br>
-                                Representation steering, concept unlearning, Diffusion Transformers
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <div class="thumbnail-placeholder">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">Downstream Effects of High-Norm Activations in Diffusion Transformers</h3>
-                            <p class="publication-venue">Ongoing Research</p>
-                            <p class="publication-description">
-                                Investigates whether sink registers and naturally occurring high-norm activations distort downstream methods that depend on a model’s internal activation distribution, such as quantisation, pruning, distillation, and feature reuse. A central question is whether explicitly handling register and high-norm tokens can improve Diffusion Transformers over standard methods.
-                            </p>
-                            <p class="publication-description">
-                                • <strong>Research themes</strong><br>
-                                High-norm activations, model compression, quantisation, representation geometry
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <div class="thumbnail-placeholder">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">Probing the Probes</h3>
-                            <p class="publication-venue">Ongoing Research</p>
-                            <p class="publication-description"><em>A Cross-Family Audit of Safety Probe Robustness under Confound Targeted Decorrelation</em></p>
-                            <p class="publication-description">
-                                Investigates whether activation-based safety probes detect their intended latent properties or instead rely on superficial correlations in their training data. Uses controlled, confound-targeted evaluations to test probe robustness across model families and safety-relevant settings.
-                            </p>
-                            <p class="publication-description">
-                                • <strong>Research themes</strong><br>
-                                Safety probes, representation monitoring, confound robustness, language-model safety
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <div class="thumbnail-placeholder">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">SafeDriveX: A Benchmark for Reasoning Faithfulness in Vision-Language-Action Driving Models</h3>
-                            <p class="publication-venue">Ongoing Research</p>
-                            <p class="publication-description">
-                                A benchmark for evaluating whether the stated reasoning of vision-language-action driving models is consistent with the visual evidence they observe, the actions they select, and the trajectories they produce.
-                            </p>
-                            <p class="publication-description">
-                                • <strong>Research themes</strong><br>
-                                Vision-language-action models, reasoning faithfulness, multimodal evaluations, driving safety
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <div class="thumbnail-placeholder">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">Faithfulness-Aware Fine-Tuning for Vision-Language-Action Driving Models</h3>
-                            <p class="publication-venue">Ongoing Research</p>
-                            <p class="publication-description">
-                                Investigates whether targeted, faithfulness-oriented fine-tuning can improve consistency between a vision-language-action model’s generated reasoning, the visual evidence available to it, and its driving behaviour, without degrading driving performance.
-                            </p>
-                            <p class="publication-description">
-                                • <strong>Research themes</strong><br>
-                                Vision-language-action models, faithfulness-aware fine-tuning, reasoning-action consistency, multimodal AI safety
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="publication-thumbnail">
-                            <img src="images/Screenshot 2025-12-08 142109.png" alt="AI Ad-Automation Platform for Fashion Businesses" class="publication-image">
-                        </div>
-                        <div class="publication-content">
-                            <h3 class="publication-title">AI Ad-Automation Platform for Fashion Businesses</h3>
-                            <p class="publication-authors">
-                                <strong>Amna Jamal</strong>
-                            </p>
-                            <p class="publication-venue">Project</p>
-                            <p class="publication-description">
-                                Built a generative-AI platform that lets fashion businesses automate ad creation from text and product images, with built-in content-moderation tools and project and campaign management for running their advertising.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://github.com/AliShoaibHassan/AdVance" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Amna Jamal</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <dl class="skills">
+        <dt>Interpretability</dt>
+        <dd>Activation extraction and hooks, causal ablation, activation patching, activation transplantation, steering vectors, linear probing, attention/QK analysis, residual-stream and representation analysis</dd>
+        <dt>Machine learning</dt>
+        <dd>PyTorch, Hugging Face Transformers and Diffusers, scikit-learn, NumPy, pandas, OpenCV, Matplotlib</dd>
+        <dt>Tools</dt>
+        <dd>Python, Git, Linux, LaTeX, MATLAB, Qiskit, Java, JavaScript, SQL</dd>
+    </dl>
+</section>
