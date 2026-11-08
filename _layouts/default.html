@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page_title | escape }}">
     <meta name="twitter:description" content="{{ page_description | escape }}">
-    <meta name="theme-color" content="#0f766e">
+    <meta name="theme-color" content="#ffffff">
     {%- if page.url == "/" %}
     <script type="application/ld+json">
         {
@@ -53,7 +53,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap">
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
     <script src="{{ '/theme.js' | relative_url }}" defer></script>
 </head>
@@ -61,13 +61,17 @@
     {% include icons.html %}
     <nav class="navbar">
         <div class="container nav-inner">
-            <a class="nav-name" href="{{ '/' | relative_url }}"><strong>Amna</strong> Jamal</a>
+            {%- if page.url != "/" %}
+            <a class="nav-name" href="{{ '/' | relative_url }}">Amna Jamal</a>
+            {%- else %}
+            <span></span>
+            {%- endif %}
             <div class="nav-links">
-                <a href="{{ '/#about' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>about</a>
-                <a href="{{ '/#papers' | relative_url }}">papers</a>
-                <a href="{{ '/#experience' | relative_url }}">experience</a>
-                <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} class="active"{% endif %}>blog</a>
-                <a href="{{ '/cv/Amna_Jamal_CV.pdf' | relative_url }}" target="_blank" rel="noopener">cv</a>
+                <a href="{{ '/#about' | relative_url }}">About</a>
+                <a href="{{ '/#papers' | relative_url }}">Papers</a>
+                <a href="{{ '/#experience' | relative_url }}">Experience</a>
+                <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} class="active"{% endif %}>Blog</a>
+                <a href="{{ '/cv/Amna_Jamal_CV.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
                 <button class="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Light / dark mode">
                     <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
                     <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
@@ -83,7 +87,7 @@
     <footer class="footer">
         <div class="container footer-inner">
             <p>&copy; {{ site.time | date: "%Y" }} Amna Jamal · Last updated {{ site.time | date: "%B %Y" }}</p>
-            <p class="credit">Design inspired by the <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> theme by Maruan Al-Shedivat. Icons by <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>.</p>
+            <p class="credit">Layout inspired by <a href="https://jonbarron.info" target="_blank" rel="noopener">Jon Barron</a>. Icons by <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>.</p>
         </div>
     </footer>
 </body>

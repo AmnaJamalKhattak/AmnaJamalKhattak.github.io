@@ -4,14 +4,14 @@ title: Blog
 description: Writing by Amna Jamal on mechanistic interpretability, AI safety, and research.
 ---
 <header class="page-head">
-    <h1 class="page-title"><strong>Blog</strong></h1>
+    <h1 class="page-title">Blog</h1>
     <p class="page-intro">Notes on interpretability, AI safety, and research.</p>
 </header>
 
 {% if site.posts.size > 0 %}
-<ol class="post-list">
+<ul class="post-list">
     {% for post in site.posts %}
-    <li class="post-card">
+    <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <div>
             {% if post.external_url %}
@@ -24,7 +24,7 @@ description: Writing by Amna Jamal on mechanistic interpretability, AI safety, a
         </div>
     </li>
     {% endfor %}
-</ol>
+</ul>
 {% else %}
-<p class="empty">Posts coming soon.</p>
+<p class="muted">Posts coming soon.</p>
 {% endif %}
