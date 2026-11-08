@@ -3,28 +3,28 @@ layout: default
 title: Blog
 description: Writing by Amna Jamal on mechanistic interpretability, AI safety, and research.
 ---
-<section class="section">
-    <h1 class="page-title">Blog</h1>
+<header class="page-head">
+    <h1 class="page-title"><strong>Blog</strong></h1>
     <p class="page-intro">Notes on interpretability, AI safety, and research.</p>
+</header>
 
-    {% if site.posts.size > 0 %}
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
-            <div>
-                {% if post.external_url %}
-                <a class="post-link" href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
-                <span class="tag">&#8599; {{ post.external_site | default: "External" }}</span>
-                {% else %}
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                {% endif %}
-                {% if post.description %}<p class="post-summary">{{ post.description }}</p>{% endif %}
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-    {% else %}
-    <p class="muted">Posts coming soon.</p>
-    {% endif %}
-</section>
+{% if site.posts.size > 0 %}
+<ol class="post-list">
+    {% for post in site.posts %}
+    <li class="post-card">
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div>
+            {% if post.external_url %}
+            <a class="post-link" href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
+            <span class="ext-tag"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>{{ post.external_site | default: "External" }}</span>
+            {% else %}
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% endif %}
+            {% if post.description %}<p class="post-summary">{{ post.description }}</p>{% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ol>
+{% else %}
+<p class="empty">Posts coming soon.</p>
+{% endif %}
