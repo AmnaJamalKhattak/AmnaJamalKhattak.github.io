@@ -61,11 +61,7 @@
     {% include icons.html %}
     <nav class="navbar">
         <div class="container nav-inner">
-            {%- if page.url != "/" %}
             <a class="nav-name" href="{{ '/' | relative_url }}">Amna Jamal</a>
-            {%- else %}
-            <span></span>
-            {%- endif %}
             <div class="nav-links">
                 <a href="{{ '/#about' | relative_url }}">About</a>
                 <a href="{{ '/#papers' | relative_url }}">Papers</a>

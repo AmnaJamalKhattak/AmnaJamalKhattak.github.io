@@ -46,6 +46,12 @@ html {
     scroll-padding-top: 64px;
 }
 
+@media (max-width: 640px) {
+    html {
+        scroll-padding-top: 96px;
+    }
+}
+
 body {
     margin: 0;
     background: var(--bg);
@@ -112,8 +118,9 @@ h2 {
 .nav-name {
     color: var(--text);
     font-family: "EB Garamond", Garamond, "Times New Roman", serif;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     letter-spacing: 0.01em;
+    white-space: nowrap;
 }
 
 .nav-name:hover {
@@ -197,13 +204,20 @@ h2 {
     min-width: 0;
 }
 
-.name {
-    margin-bottom: 1rem;
+.greeting {
+    margin-bottom: 0.6rem;
     font-family: "EB Garamond", Garamond, "Times New Roman", serif;
-    font-size: 2.9rem;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    line-height: 1.1;
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
 .bio {
@@ -217,6 +231,9 @@ h2 {
 .status {
     padding-left: 0.75rem;
     border-left: 3px solid var(--link);
+}
+
+.status strong {
     font-weight: 600;
 }
 
@@ -534,8 +551,7 @@ h2 {
         padding-top: 2rem;
     }
 
-    .name {
-        font-size: 2.5rem;
+    .greeting {
         text-align: center;
     }
 
@@ -545,12 +561,10 @@ h2 {
     }
 
     .nav-inner {
+        flex-direction: column;
         justify-content: center;
-    }
-
-    .nav-inner > span,
-    .nav-name {
-        display: none;
+        gap: 0.15rem;
+        padding: 0.5rem 0 0.55rem;
     }
 
     .nav-links {
