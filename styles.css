@@ -314,6 +314,7 @@ h2 {
 
 .authors strong {
     color: var(--text);
+    white-space: nowrap;
 }
 
 .venue {
