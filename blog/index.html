@@ -16,7 +16,7 @@ description: Writing by Amna Jamal on mechanistic interpretability, AI safety, a
         <div>
             {% if post.external_url %}
             <a class="post-link" href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
-            <span class="ext-tag"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>{{ post.external_site | default: "External" }}</span>
+            <span class="ext-tag"><svg class="icon" width="10" height="10" aria-hidden="true"><use href="#i-external"/></svg>{{ post.external_site | default: "External" }}</span>
             {% else %}
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             {% endif %}
