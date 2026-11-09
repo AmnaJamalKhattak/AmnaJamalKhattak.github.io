@@ -123,6 +123,22 @@ h2 {
     white-space: nowrap;
 }
 
+.nav-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.spiral {
+    width: 0.8em;
+    height: 0.8em;
+    flex-shrink: 0;
+}
+
+.spiral-note {
+    font-style: italic;
+}
+
 .nav-name:hover {
     color: var(--text);
     text-decoration: none;
