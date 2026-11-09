@@ -204,13 +204,6 @@ h2 {
     min-width: 0;
 }
 
-.greeting {
-    margin-bottom: 0.6rem;
-    font-family: "EB Garamond", Garamond, "Times New Roman", serif;
-    font-size: 1.9rem;
-    line-height: 1.2;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -551,11 +544,7 @@ h2 {
         padding-top: 2rem;
     }
 
-    .greeting {
-        text-align: center;
-    }
-
-    .photo {
+        .photo {
         width: 150px;
         height: 150px;
     }
