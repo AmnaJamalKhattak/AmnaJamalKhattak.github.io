@@ -23,6 +23,9 @@
     <meta name="twitter:title" content="{{ page_title | escape }}">
     <meta name="twitter:description" content="{{ page_description | escape }}">
     <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="icon" href="{{ '/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     {%- if page.url == "/" %}
     <script type="application/ld+json">
         {

@@ -229,8 +229,7 @@ h2 {
 }
 
 .status {
-    padding-left: 0.75rem;
-    border-left: 3px solid var(--link);
+    color: var(--text);
 }
 
 .status strong {
